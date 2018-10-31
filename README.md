@@ -39,7 +39,10 @@ Changing the network configuration setting is easy. For example, to change the d
 It provides many supporting code such as exporting the trained model to a frozen graph that can be used in production(For example, in your c++ project).
 Check out my another project [DeepSceneTextReader](https://github.com/dafanghe/DeepSceneTextReader) which used the frozen graph trained with this code.
 
-# Code Changed
+# Code Changed compared to the original object detection implementation
+
+### Import path for each python file
+You do not need to use blaze build to build the code. Simply run the code from the root directory for fast experiment.
 
 ### proto files
 added oriented related filed to the proto files. Please build them with
@@ -65,10 +68,11 @@ Use the code create_text_dataset.py to create the tfexample data files used for 
 You can create ICDAR 2015 and ICDAR 2013 data for training.
 
 ### Download the pretrained weight
-If you are training faster rcnn inception resnet v2 model, you can download the [pretrained weight](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_coco_2018_01_28.tar.gz) from tensorflow model zoo.
+If you are training faster rcnn inception resnet v2 model, you can download the [pretrained weight](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_coco_2018_01_28.tar.gz) from tensorflow [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
 
 ### change the specific configuration setting.
 See data/faster_rcnn_inception_resnet_v2_atrous_text.config for example configuration
+The parameter: second_stage_localization_loss_weight_oriented is the weight for the oriented bounding box prediction.
 
 ### Train the model
 Example running script is provided: train_faster_rcnn_inception_resnet_v2.sh
