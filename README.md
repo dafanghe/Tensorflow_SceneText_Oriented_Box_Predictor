@@ -6,9 +6,11 @@ Many tasks need to predict an oriented bounding box, e.g: Scene Text Detection.
 For each predicted bounding boxes, in addition to the regular horizontal bounding box, we need to predict one oriented bounding box.
 Basically it means that we need to regress to an oriented bounding box.
 In this project, we simply regress to the encoded 4 corners of the oriented bounding boxes(8 values).
+See below equation for the encoding function. j is the index for each corner. g represents ground truth oriented bounding boxes.
+w_a and h_a is the anchor width and height, respectively.
 
 <p align="center">
-  <img src="pics/encoding.png" height=240>
+  <img src="pics/encoding.png" height=120>
 </p>
 
 # The reason of adopting this Faster RCNN/SSD framework:
