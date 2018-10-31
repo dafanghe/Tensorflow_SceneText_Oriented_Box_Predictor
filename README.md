@@ -7,7 +7,12 @@ For each predicted bounding boxes, in addition to the regular horizontal boundin
 Basically it means that we need to regress to an oriented bounding box.
 In this project, we simply regress to the encoded 4 corners of the oriented bounding boxes(8 values).
 
-# The reason of adopting this framework:
+<p align="center">
+  <img src="pics/encoding.png" height=240>
+</p>
+
+# The reason of adopting this Faster RCNN/SSD framework:
+There are many object detection framework to be used. We adopt this one as the basis for the following reasons:
 ### Highly modular designed code
 It's easy to change the encoding scheme in the code. Simply changing the code in box_coders folder.
 The encoding using [R2CNN] (https://arxiv.org/abs/1706.09579) will be released soon.
