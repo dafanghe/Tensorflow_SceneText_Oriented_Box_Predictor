@@ -33,4 +33,11 @@ Check out my another project [DeepSceneTextReader](https://github.com/dafanghe/D
 # Code Changed
 
 ### proto files
-added oriented 
+added oriented related filed to the proto files. Please build them with
+
+```
+protoc protos/*.proto --python_out=.
+```
+
+### Box encoding scheme
+added code for encode oriented bounding boxes
