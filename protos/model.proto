@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package protos;
+
+import "protos/faster_rcnn.proto";
+import "protos/ssd.proto";
+
+// Top level configuration for DetectionModels.
+message DetectionModel {
+  oneof model {
+    FasterRcnn faster_rcnn = 1;
+    Ssd ssd = 2;
+  }
+}
