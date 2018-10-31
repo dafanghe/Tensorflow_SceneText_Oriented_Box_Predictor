@@ -46,7 +46,7 @@ added code for encode and decode oriented bounding boxes
 Add code to predict the oriented bounding boxes for each proposal.
 At the same time the add code to calculate the oriented bounding boxes regression loss.
 
-### Other changes regarding data data reading/decoding and others
+### Other changes regarding data reading, data decoding and others
 
 
 # Usage:
