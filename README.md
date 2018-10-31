@@ -40,4 +40,10 @@ protoc protos/*.proto --python_out=.
 ```
 
 ### Box encoding scheme
-added code for encode oriented bounding boxes
+added code for encode and decode oriented bounding boxes
+
+### Added code in meta architecture for supporting oriented bounding box prediction
+Add code to predict the oriented bounding boxes for each proposal.
+At the same time the add code to calculate the oriented bounding boxes regression loss.
+
+### Other changes regarding data data reading/decoding ... 
