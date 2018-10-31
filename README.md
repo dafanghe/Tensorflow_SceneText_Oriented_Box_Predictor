@@ -69,7 +69,7 @@ Trained with default setting with ResNet Inception V2 or ResNet 101 backbone on 
 The performance on ICDAR 2015 dataset.
 
 | Backbone  | Recall | Precision | F-1 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | 
 | ResNet Inception V2 | 0.7371 | 0.8057 | 0.7699 |
 | ResNet 101 | 0.6861 | 0.8213 | 0.7476 |
 
