@@ -1,5 +1,5 @@
 This is an oriented object detector based on [tensorflow object detection API](https://github.com/tensorflow/models/tree/master/research/object_detection).
-Most of the code is not changed except those related to the need of predicinting oriented bounding boxes rather than regular horizontal bounding boxes.
+Most of the code is not changed except for those related to the need of predicinting oriented bounding boxes rather than regular horizontal bounding boxes.
 Many tasks need to predict an oriented bounding box, e.g: Scene Text Detection.
 
 # Goals
