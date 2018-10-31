@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#export PYTHONPATH=$PYTHONPATH
-
 CONFIG_PATH='SceneText/faster_rcnn/faster_rcnn_inception_resnet_v2/faster_rcnn_inception_resnet_v2_atrous_text.config'
 TRAIN_DIR='SceneText/faster_rcnn/faster_rcnn_inception_resnet_v2/train/'
 

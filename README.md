@@ -46,4 +46,32 @@ added code for encode and decode oriented bounding boxes
 Add code to predict the oriented bounding boxes for each proposal.
 At the same time the add code to calculate the oriented bounding boxes regression loss.
 
-### Other changes regarding data data reading/decoding ... 
+### Other changes regarding data data reading/decoding and others
+
+
+# Usage:
+
+## Create the tfrecord data
+Use the code create_text_dataset.py to create the tfexample data files used for training.
+You can create ICDAR 2015 and ICDAR 2013 data for training.
+
+### Download the pretrained weight
+If you are training faster rcnn inception resnet v2 model, you can download the [pretrained weight](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_coco_2018_01_28.tar.gz) from tensorflow model zoo.
+
+### change the specific configuration setting.
+See data/faster_rcnn_inception_resnet_v2_atrous_text.config for example configuration
+
+### Train the model
+Example running script is provided: train_faster_rcnn_inception_resnet_v2.sh
+
+# TODO
+1. Provide support for R2CNN training.
+
+# Reference and Related Projects
+- [Faster RCNN](https://arxiv.org/abs/1506.01497) Faster RCNN paper.
+- [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection).
+- [R2CNN](https://arxiv.org/abs/1706.09579) Reference paper for R2CNN.
+
+# Contact:
+
+* Dafang He. The Penn State University.  hdfcraig@gmail.com   http://personal.psu.edu/duh188/
