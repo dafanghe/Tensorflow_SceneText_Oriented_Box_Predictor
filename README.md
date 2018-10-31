@@ -64,8 +64,18 @@ See data/faster_rcnn_inception_resnet_v2_atrous_text.config for example configur
 ### Train the model
 Example running script is provided: train_faster_rcnn_inception_resnet_v2.sh
 
+### Evaluation
+Trained with default setting with ResNet Inception V2 or ResNet 101 backbone on ICDAR 2013 + ICDAR 2015 training set.
+The performance on ICDAR 2015 dataset.
+
+| Backbone  | Recall | Precision | F-1 |
+| --- | --- | --- | --- | --- |
+| ResNet Inception V2 | 0.7371 | 0.8057 | 0.7699 |
+| ResNet 101 | 0.6861 | 0.8213 | 0.7476 |
+
 # TODO
 1. Provide support for R2CNN training.
+
 
 # Reference and Related Projects
 - [Faster RCNN](https://arxiv.org/abs/1506.01497) Faster RCNN paper.
